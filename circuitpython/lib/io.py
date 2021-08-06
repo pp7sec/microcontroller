@@ -25,7 +25,7 @@ class p_digitalOut:
             return 0
         #return self.gpio.value
 
-class p_digitalOut:
+class p_digitalIn:
     def __init__(self, pin, mode = None):
         self.pin = getattr(board, 'GP'+str(pin))
         self.gpio = DigitalInOut(self.pin)
